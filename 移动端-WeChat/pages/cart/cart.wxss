@@ -1,0 +1,14 @@
+/**cart.wxss**/
+.container {
+	padding: 0rpx;
+	width: 100%;
+}
+
+.search {
+	width: 100%;
+}
+  
+.cartlist {
+	width: 100%;
+	background-color: whitesmoke;
+}

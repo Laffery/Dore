@@ -1,0 +1,18 @@
+/**index.wxss**/
+.welcome {
+  margin-top: 100rpx;
+  align-items: center;
+}
+
+.userinfo {
+  margin-top: 120rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login {
+  width: 15rem; 
+  height: 6rem; 
+  margin:  4rem 0;
+}

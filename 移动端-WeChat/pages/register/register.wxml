@@ -1,0 +1,36 @@
+<!-- register.wxml -->
+<!--index.wxml-->
+<view class="container">
+  <view class="welcome">
+    <block>
+      <text style="text-align: center">填写您的注册信息</text>
+    </block>
+  </view>
+  <view class="userinfo">
+    <van-cell-group>
+	  <van-field bindblur="bindEmailInput" 
+        left-icon="envelop-o" placeholder="请输入邮箱" 
+        bindtap="bindEmailTap" 
+		    clearable 
+        error-message="{{email_err_msg}}"/>
+    <van-field bindblur="bindUsernameInput" 
+        left-icon="user-o" placeholder="请输入用户名" 
+        bindtap="bindUsernameTap" 
+		    clearable
+        error-message="{{name_err_msg}}"/>
+    <van-field bindblur="bindPasswordInput" password="true" 
+        left-icon="edit" placeholder="请输入密码" 
+        clearable border= true 
+        bindtap="bindPasswordTap" 
+        error-message="{{pwd_err_msg}}"/>
+		<van-field bindblur="bindConfirmInput" password="true" 
+        left-icon="flag-o" placeholder="请再次输入密码" 
+        clearable border= true 
+        bindtap="bindConfirmTap" 
+        error-message="{{confirm_err_msg}}"/>
+    </van-cell-group>
+  </view>
+  <view class="register">
+    <van-button bindtap="submit" round type="primary" size="normal" block>提交</van-button>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/register/register",
+		"pages/logs/logs",
+		"pages/home/home",
+		"pages/detail/detail",
+		"pages/cart/cart",
+		"pages/order/order",
+		"pages/profile/profile",
+		"pages/item/item"
+	],
+	"window": {
+		"backgroundColor": "#f7f5f3",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#ffc0cb",
+		"navigationBarTitleText": "Dore Book Store",
+		"navigationBarTextStyle": "black",
+		"enablePullDownRefresh": true
+	},
+	"sitemapLocation": "sitemap.json"
+}

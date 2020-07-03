@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="welcome">
+    <block>
+      <text style="text-align: center">{{motto}}</text>
+    </block>
+  </view>
+  <view class="userinfo">
+    <van-cell-group>
+      <van-field bindblur="bindUsernameInput" 
+        left-icon="user-o" placeholder="请输入用户名" 
+        bindtap="bindUsernameTap" 
+        error-message="{{name_err_msg}}"/>
+      <van-field bindblur="bindPasswordInput" password="true" 
+        left-icon="edit" placeholder="请输入密码" 
+        clearable border= true 
+        bindtap="bindPasswordTap" 
+        error-message="{{pwd_err_msg}}"/>
+    </van-cell-group>
+  </view>
+  <view class="login">
+    <van-button bindtap="signin" round type="primary" block>登录</van-button>
+  </view>
+  <view class="register">
+    <van-button bindtap="signup" round plain hairline type="info" block>没有账号，立即注册</van-button>
+  </view>
+</view>

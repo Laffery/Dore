@@ -1,0 +1,71 @@
+.picture {
+	margin-top: 15rpx;
+}
+
+.price {
+	border-top: 10rpx solid whitesmoke;
+	padding-left: 15rpx;
+	font-size: 50rpx;
+	font-weight: 600;
+	color: tomato;
+}
+
+.simple_desc {
+	display: flex;
+	border-bottom: 10rpx solid whitesmoke;
+}
+
+.title {
+	color: #000;
+	font-size: 40rpx;
+	padding: 0 10rpx;
+	flex: 4;
+
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+.stock {
+	flex: 2;
+	font-size: 40rpx;
+	color: pink;
+}
+
+.desc {
+	padding: 20rpx 10rpx;
+	color: #000;
+	font-size: 30rpx;
+	font-weight: 600;
+}
+
+.desc text {
+	font-weight: 300;
+}
+
+.desc_title {
+	
+	color: tomato;
+	font-size: 50rpx;
+	border-bottom: 10rpx solid whitesmoke;
+}
+
+.stepper {
+	margin-top: 1.5rem;
+	width: 202rpx;
+	border: 5rpx solid #ccc;
+	border-radius: 15rpx;
+	margin:0 auto;
+}
+
+.selected {
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+
+.counter {
+	margin-top: 1.5rem;
+	margin-left: 1rem;
+}
+

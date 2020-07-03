@@ -1,0 +1,18 @@
+/* profile.wxss */
+.container {
+	padding: 0rpx;
+	width: 100%;
+}
+
+.avatar {
+	margin-top: 10rem;
+	width: 5rem;
+	height: 5rem;
+}
+
+.logout {
+	width: 15rem; 
+  	height: 6rem; 
+	margin: 4rem 0;
+	padding-top: 3rem;
+}

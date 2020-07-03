@@ -1,0 +1,65 @@
+<!-- detail.wxml -->
+<view>
+	<view class="detail">
+		<view class="picture">
+			<image src="{{book.detail.iconBase64}}" alt="{{book.title}}"></image>
+		</view>
+		<view class="price">
+			<text>￥{{book.price}}</text>
+		</view>
+		<view class="simple_desc">
+			<view class="title">
+				<text>{{book.title}}</text>
+			</view>
+			<view class="stock">
+				<text>库存{{book.stock}}件</text>
+			</view>	
+		</view>
+	</view>
+	<view class="desc">
+		<view class="desc_title">图书详情</view>
+		<view class="author">图书作者: <text>{{book.author}}</text></view>
+		<view class="type">图书类型: <text>{{book.type}}</text></view>
+		<view class="isbn">图书编码: <text>{{book.isbn}}</text></view>
+		<view class="description">图书简介: <text>{{book.detail.description}}</text></view>
+	</view>
+
+	<view class="foot">
+		<van-goods-action>
+  			<van-goods-action-icon icon="chat-o" text="客服" bind:click="onClickIcon" />
+  			<van-goods-action-icon icon="cart-o" text="购物车" bind:click="onClickIcon" />
+  			<van-goods-action-button
+    			text="加入购物车"
+    			type="info"
+				round
+    			bind:click="onClickCart"/>
+  			<van-goods-action-button 
+			  	text="立即购买"
+				type="primary" 
+				round  
+				bind:click="onClickBuy" />
+		</van-goods-action>
+	</view>
+
+	<van-popup
+		round
+	  	show="{{show}}"
+		close-icon-position="top-left"
+  		position="bottom"
+		custom-style="height: 40%"
+  		bind:close="onClose"
+	>
+		<view class="selected">
+			<text>已选择《{{book.title}}》</text>
+		</view>
+		<view class="counter">
+			<text>请选择图书数量</text>
+		</view>
+		<view class="stepper">
+			<van-stepper  value="num" bind:change="onChange" ></van-stepper>
+		</view>
+		<view class="submit">
+			<van-submit-bar price="{{price}}" button-text="提交" bind:submit="onSubmit"/>
+		</view>
+	</van-popup>
+</view>

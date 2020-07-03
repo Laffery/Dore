@@ -1,0 +1,14 @@
+/**order.wxss**/
+.container {
+	padding: 0rpx;
+	width: 100%;
+}
+
+.search {
+	width: 100%;
+}
+  
+.orderlist {
+	width: 100%;
+	background-color: whitesmoke;
+}
